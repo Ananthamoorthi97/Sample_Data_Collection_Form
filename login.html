@@ -1,0 +1,36 @@
+<html>
+
+<head>
+    <meta http-equiv="content-Type" content="text/html; charset=utf-8" />
+    <title>Form</title>
+    <link href="login.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Play" rel="stylesheet">
+
+</head>
+
+<body>
+    
+    <form id="form" ></form>
+    <div class="signin">
+        <form id="form" method="post" onsubmit = "return(validateForm());" >
+            <h2 style="color:white">Log In</h2>
+            <input id="name" type="text" name="username" placeholder="Username" required>
+            <input id="pw" type="password" name="password" placeholder="Password" required><br>
+            <br>
+            <a href="cong.html"><input id="Log In" type="button" value="Log In" onClick="check()"></a><br>
+            <br>
+            <div id="container">
+                <a href="re.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;"> Reset
+                    Password</a>
+                <a href="for.html" style=" margin-right:0px; font-size:13px; font-family:Tahoma, Geneva, sans-serif;"> Forget
+                    Password</a>
+            </div><br><br><br><br><br><br>
+            Don't have account ?<a href="signup.html">&nbsp;Sign Up</a>
+            <p id="error"></p>
+            <p id="sucess"></p>
+        </form>
+    </div>
+
+</body>
+<script type='text/javascript' src="script.js"></script>
+</html>
